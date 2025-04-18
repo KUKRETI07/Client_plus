@@ -4,7 +4,7 @@ Project Overview :
 Customer churn prediction is crucial for businesses like banks and credit institutions that need to retain customers. By predicting which customers are likely to leave, businesses can take proactive steps to improve customer experience and reduce losses. In this project, I have applied various data analysis, machine learning, and data visualization techniques to build a churn prediction model for customers using credit cards and loans.
 
 Objectives:
-* Predict customer churn using historical data of credit card/loan customers.
+* Predict customer churn using historical data of customers credit card.
 
 * Identify the key features influencing customer churn.
 
@@ -40,9 +40,9 @@ This project uses a variety of tools and technologies to clean, analyze, and pre
 
 * Data Preprocessing & Cleaning
   
-*  Steps performed:
+ Steps performed:
    
-1. Handling Missing Values:
+1. Handling Missing Values
 
 2. Checked and handled missing values using imputation or removal where necessary.
 
@@ -54,7 +54,7 @@ This project uses a variety of tools and technologies to clean, analyze, and pre
    
 6. Churn Label Creation: Created the churn label from the Attrition_Flag column, with 1 representing churned customers and 0 representing active customers.
    
-7. Exploratory Data Analysis (EDA)
+ Exploratory Data Analysis (EDA)
    
   * Key Insights from EDA:
     
@@ -80,7 +80,7 @@ This project uses a variety of tools and technologies to clean, analyze, and pre
 
 * Feature Engineering
   
-   * Steps performed:
+    Steps performed:
      1.  Date-based Features: Extracted features like the Months_Inactive_12_Months, indicating inactivity duration.
 
      2. Aggregated Customer Behavior: Calculated average spending and transaction frequency for customers. 
@@ -111,24 +111,23 @@ This project uses a variety of tools and technologies to clean, analyze, and pre
 
        * XGBoost: Overfitted, discarded
 
-* Power BI Dashboard
-The Power BI Dashboard provides interactive visuals for business decision-making.
+ Power BI Dashboard
+ 
+  * The Power BI Dashboard provides interactive visuals for business decision-making.
+     
+  * KPIs: Total Customers , Churned Customers , Churn Rate (calculated as Churned Customers / Total Customers) , Avg Credit Limit of Churned vs Active Customers
 
-KPIs: Total Customers , Churned Customers , Churn Rate (calculated as Churned Customers / Total Customers) , Avg Credit Limit of Churned vs Active Customers
+  * Visualizations: Churn Rate by Gender , Churn Rate by Education Level , Churn Rate by Credit Limit , Churn vs Transaction Amount (Bar and scatter plots)
 
-Visualizations: Churn Rate by Gender , Churn Rate by Education Level , Churn Rate by Credit Limit , Churn vs Transaction Amount (Bar and scatter plots)
-
-* Insights & Recommendations
+ Insights & Recommendations (Based on the model and EDA)
   
- *  Based on the model and EDA:
-
    * Inactivity is a major driver of churn: Customers who have been inactive for several months are more likely to churn.
 
    * Low credit limits lead to higher churn: Customers with low credit limits are more likely to churn, suggesting that increasing the credit limit may improve retention.
 
    * Targeted Campaigns: Financial institutions should focus retention campaigns on customers with low transaction activity and higher months of inactivity.
 
-* Future Improvements: 
+ Future Improvements: 
    * Improve Model Performance: By tuning hyperparameters for models like Random Forest and XGBoost, we could improve accuracy.
 
    * Incorporate More Data: Additional data points such as customer interactions, payment history, etc., could help in further improving churn predictions.
