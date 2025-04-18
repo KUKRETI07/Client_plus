@@ -12,7 +12,6 @@ Objectives:
 
 * Build an interactive and intuitive dashboard for decision-making.
 
-Dataset
 The dataset used in this project contains customer transaction details, demographics, and behavior over a period of time. Key columns include:
 
 * Customer_ID: Unique identifier for each customer.
