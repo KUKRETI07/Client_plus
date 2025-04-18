@@ -1,6 +1,6 @@
 # Client_plus
 
-Project Overview
+Project Overview : 
 Customer churn prediction is crucial for businesses like banks and credit institutions that need to retain customers. By predicting which customers are likely to leave, businesses can take proactive steps to improve customer experience and reduce losses. In this project, I have applied various data analysis, machine learning, and data visualization techniques to build a churn prediction model for customers using credit cards and loans.
 
 Objectives:
