@@ -92,7 +92,9 @@ This project uses a variety of tools and technologies to clean, analyze, and pre
 
 * Model Training & Evaluation
   
- 1. Models Used: Logistic Regression (LR): Baseline model for classification.
+  Models Used:
+  
+ 1. Logistic Regression (LR): Baseline model for classification.
 
  2. Support Vector Machine (SVM): Used for its effectiveness in high-dimensional spaces.
 
@@ -102,17 +104,17 @@ This project uses a variety of tools and technologies to clean, analyze, and pre
 
  5. XGBoost: A powerful boosting algorithm that performs well on classification tasks.
 
-* Model Performance: Logistic Regression: 0.95 ROC AUC
+* Model Performance:
+
+  1. Logistic Regression: 0.95 ROC AUC
   
-  1. SVM: 0.97 ROC AUC (best performing model)
+  2. SVM: 0.97 ROC AUC (best performing model)
 
-  2. KNN: 0.89 ROC AUC
-
-       * Random Forest: Overfitted, discarded
-
-       * XGBoost: Overfitted, discarded
-         
-  3. Ensemble Voting Classifier 0.91 AUC
+  3. KNN: 0.89 ROC AUC
+ 
+  4. Random Forest: 0.87 AUC
+ 
+  5. XGBoost: 0.88 AUC
 
  Power BI Dashboard
  
