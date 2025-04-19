@@ -111,6 +111,8 @@ This project uses a variety of tools and technologies to clean, analyze, and pre
        * Random Forest: Overfitted, discarded
 
        * XGBoost: Overfitted, discarded
+         
+  3. Ensemble Voting Classifier 0.91 AUC
 
  Power BI Dashboard
  
@@ -127,10 +129,3 @@ This project uses a variety of tools and technologies to clean, analyze, and pre
    * Low credit limits lead to higher churn: Customers with low credit limits are more likely to churn, suggesting that increasing the credit limit may improve retention.
 
    * Targeted Campaigns: Financial institutions should focus retention campaigns on customers with low transaction activity and higher months of inactivity.
-
- Future Improvements: 
-   * Improve Model Performance: By tuning hyperparameters for models like Random Forest and XGBoost, we could improve accuracy.
-
-   * Incorporate More Data: Additional data points such as customer interactions, payment history, etc., could help in further improving churn predictions.
-
-   * Real-Time Prediction: Implement real-time prediction of churn using streaming data from the bank.
