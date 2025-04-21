@@ -24,7 +24,7 @@ A financial institution wants to reduce losses from customers closing their cred
 
 * Customer information and usage patterns (credit limit, transaction amount, contact count, months inactive, etc.)
 
-Process
+# Process
 
 1. Data Cleaning
 
