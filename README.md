@@ -1,133 +1,84 @@
-# Client_Plus
+# Client Plus – Credit Card Customer Churn Prediction 
 
-Project Overview : 
-Customer churn prediction is crucial for businesses like banks and credit institutions that need to retain customers. By predicting which customers are likely to leave (Customer Behaviour), businesses can take proactive steps to improve customer experience and reduce losses. In this project, I have applied various data analysis, machine learning, and data visualization techniques to build a churn prediction model for customers using credit cards and loans.
+# Overview
 
-Project flow : Data Collection --> MySQL (For cleaning and insight) --> Python (For EDA) --> Python (for Machine Learning Models) --> Power BI (for Dashboard Creation)
+Customer churn is a major concern for financial institutions, especially in competitive sectors like credit card services. This project aims to build a machine learning pipeline that predicts the likelihood of a customer churning (closing their credit card account), enabling the company to take proactive retention actions.
 
-Objectives:
-* Predict customer churn using historical data of customers credit card.
+# Problem Statement
 
-* Identify the key features influencing customer churn.
+A financial institution wants to reduce losses from customers closing their credit cards. Your goal is to analyze customer behavior, identify churn patterns, and build a predictive model that accurately flags high-risk customers.
 
-* Visualize the insights using Power BI.
+# Tools & Technologies
 
-* Build an interactive and intuitive dashboard for decision-making.
+* Languages: Python, SQL (MySQL)
 
-The dataset used in this project contains customer transaction details, demographics, and behavior over a period of time. Key columns include:
+* Libraries: Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn
 
-* Customer_ID: Unique identifier for each customer.
+* ML Models: Logistic Regression, SVM, KNN, Random Forest, XGBoost
 
-* Credit_Limit: The total credit limit of the customer.
+* BI Tool: Power BI (DAX, Slicers, KPIs)
 
-* Avg_Open_To_Buy: Average amount available for spending.
+* Other: Jupyter Notebook, Git, GitHub
 
-* Total_Trans_Amt: Total transaction amount in the last 12 months.
+# Dataset
 
-* Months_Inactive_12_Months: Number of months the customer has been inactive in the last 12 months.
+* Customer information and usage patterns (credit limit, transaction amount, contact count, months inactive, etc.)
 
-* Attrition_Flag: Label for customer churn (1 = churned, 0 = active).
+Process
 
-Tools & Technologies
-This project uses a variety of tools and technologies to clean, analyze, and predict customer churn.
+1. Data Cleaning
 
-* Python Libraries: pandas, numpy, matplotlib, seaborn, sklearn, xgboost, tensorflow
+* Removed duplicates and handled null values
 
-* SQL: Data preprocessing and querying for data extraction.
+* Standardized column formats
 
-* Power BI: For building the interactive dashboard and visualizations.
+* Cleaned using SQL queries (JOIN, GROUP BY, HAVING, Filtering)
 
-* Jupyter Notebook: For running Python scripts and analysis.
+2. Exploratory Data Analysis (EDA)
 
-* Data Preprocessing & Cleaning
-  
- Steps performed:
-   
-1. Handling Missing Values
+* Identified churn trends based on card category, contact count, tenure, and inactivity
 
-2. Checked and handled missing values using imputation or removal where necessary.
+* Plotted distributions, correlations, and pair plots to explore relationships
 
-3. Outlier Detection & Removal: Detected outliers using statistical methods (Z-score, IQR) and removed or adjusted them for model training.
+3. Feature Engineering
 
-4. Feature Transformation: Converted categorical variables (e.g., Gender, Education_Level) into numeric form using one-hot encoding or label encoding.
+* Created interaction features (e.g., contact-to-churn ratio, total transaction avg)
 
-5. Normalization: Applied Min-Max scaling to normalize numerical features like Credit_Limit, Total_Trans_Amt, etc.
-   
-6. Churn Label Creation: Created the churn label from the Attrition_Flag column, with 1 representing churned customers and 0 representing active customers.
-   
- Exploratory Data Analysis (EDA)
-   
-  * Key Insights from EDA:
-    
-    *  Customer Demographics: Most of the churned customers were from certain age groups and had lower credit limits.
+* Handled outliers using IQR
 
-    *  Transaction Patterns: Churned customers had fewer transactions in the past 12 months.
+* Applied PCA to reduce dimensionality and improve model performance
 
-    *  Inactive Customers: A higher number of months of inactivity led to higher churn rates.
+4. Model Building & Evaluation
 
-8. Visualizations:
+* Trained 5 classification models
 
- *  Churn Rate by Gender
+* Best Model: Support Vector Machine (SVM)
 
- * Churn Rate by Education Level
+* Tuned hyperparameters using GridSearchCV
 
- * Churn Rate by Credit Limit
+* Evaluated with:
 
- * Churn Rate vs Transaction Amount
+* Accuracy: 91.5%
 
- * Monthly Churn Trends (Line Chart)
+* Cross-Validation Score: 90%
 
-( The full code and visualizations can be found in the EDA notebook. )
+* Confusion Matrix, Classification Report, ROC Curve
 
-* Feature Engineering
-  
-    Steps performed:
-     1.  Date-based Features: Extracted features like the Months_Inactive_12_Months, indicating inactivity duration.
+5. Power BI Dashboard
 
-     2. Aggregated Customer Behavior: Calculated average spending and transaction frequency for customers. 
+* Built an interactive dashboard with:
 
-     3. Interaction Features: Combined existing features like Credit_Limit and Total_Trans_Amt to create new features showing financial engagement.
+* KPIs: Churn Rate, Contact Count, Tenure, Card Category
 
-     4. Encoding Categorical Data: Used One-Hot Encoding for categorical features like Gender and Education_Level. 
+* Filters for gender, education level, card type
 
-* Model Training & Evaluation
-  
-  Models Used:
-  
- 1. Logistic Regression (LR): Baseline model for classification.
+* DAX measures and clean layout for business use
 
- 2. Support Vector Machine (SVM): Used for its effectiveness in high-dimensional spaces.
+ #  Final Insights
 
- 3. K-Nearest Neighbors (KNN): Applied to measure similarity between customers.
+* Customers with >4 inactive months and <3 contact counts are highly likely to churn
 
- 4. Random Forest (RF): Used for feature importance and high accuracy.
+* Most churned users held basic "Blue" card tier
 
- 5. XGBoost: A powerful boosting algorithm that performs well on classification tasks.
+* Customers with lower available credit showed higher churn risk
 
-* Model Performance:
-
-  1. Logistic Regression: 0.95 ROC AUC
-  
-  2. SVM: 0.97 ROC AUC (best performing model)
-
-  3. KNN: 0.89 ROC AUC
- 
-  4. Random Forest: 0.87 AUC
- 
-  5. XGBoost: 0.88 AUC
-
- Power BI Dashboard
- 
-  * The Power BI Dashboard provides interactive visuals for business decision-making.
-     
-  * KPIs: Total Customers , Churned Customers , Churn Rate (calculated as Churned Customers / Total Customers) , Avg Credit Limit of Churned vs Active Customers
-
-  * Visualizations: Churn Rate by Gender , Churn Rate by Education Level , Churn Rate by Credit Limit , Churn vs Transaction Amount (Bar and scatter plots)
-
- Insights & Recommendations (Based on the model and EDA)
-  
-   * Inactivity is a major driver of churn: Customers who have been inactive for several months are more likely to churn.
-
-   * Low credit limits lead to higher churn: Customers with low credit limits are more likely to churn, suggesting that increasing the credit limit may improve retention.
-
-   * Targeted Campaigns: Financial institutions should focus retention campaigns on customers with low transaction activity and higher months of inactivity.
