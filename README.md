@@ -87,4 +87,4 @@ Customer churn is a major concern for financial institutions, especially in comp
 
 # Model App Link
 
-https://clientplus-wckiuuaxxk6wix5ieeyshq.streamlit.app/
+https://clientplus-khwxfezkfgasxkumunz34m.streamlit.app/
