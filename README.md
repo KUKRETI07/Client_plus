@@ -82,6 +82,6 @@ A financial institution wants to reduce losses from customers closing their cred
 
 * Customers with lower available credit showed higher churn risk
 
-# Model app Link
+# Model App Link
 
 https://clientplus-wckiuuaxxk6wix5ieeyshq.streamlit.app/
