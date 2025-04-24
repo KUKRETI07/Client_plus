@@ -1,14 +1,15 @@
 # Client Plus – Credit Card Customer Churn Prediction 
 
+# Problem Statement
+
+A financial institution wants to reduce losses from customers closing their credit cards. Your goal is to analyze customer behavior, identify churn patterns, and build a predictive model that accurately flags high-risk customers.
+
 # Overview
 
 Customer churn is a major concern for financial institutions, especially in competitive sectors like credit card services. This project aims to build a machine learning pipeline that predicts the likelihood of a customer churning (closing their credit card account), enabling the company to take proactive retention actions.
 
 ![Image](https://github.com/KUKRETI07/Client_plus/blob/bc1ba1a9311e60a6cadd85b790ed9191054e6f37/Screenshot%20(61).png)
 
-# Problem Statement
-
-A financial institution wants to reduce losses from customers closing their credit cards. Your goal is to analyze customer behavior, identify churn patterns, and build a predictive model that accurately flags high-risk customers.
 
 # Tools & Technologies
 
