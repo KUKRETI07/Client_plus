@@ -29,7 +29,7 @@ Customer churn is a major concern for financial institutions, especially in comp
 
 # Process
 
-1. Data Cleaning
+# 1. Data Cleaning
 
 * Removed duplicates and handled null values
 
@@ -38,14 +38,14 @@ Customer churn is a major concern for financial institutions, especially in comp
 * Cleaned using SQL queries (JOIN, GROUP BY, HAVING, Filtering)
   
 
-2. Exploratory Data Analysis (EDA)
+# 2. Exploratory Data Analysis (EDA)
 
 * Identified churn trends based on card category, contact count, tenure, and inactivity
 
 * Plotted distributions, correlations, and pair plots to explore relationships
   
 
-3. Feature Engineering
+# 3. Feature Engineering
 
 * Created interaction features (e.g., contact-to-churn ratio, total transaction avg)
 
@@ -54,7 +54,7 @@ Customer churn is a major concern for financial institutions, especially in comp
 * Applied PCA to reduce dimensionality and improve model performance
   
 
-4. Model Building & Evaluation
+# 4. Model Building & Evaluation
 
 * Trained 5 classification models
 
@@ -71,7 +71,7 @@ Customer churn is a major concern for financial institutions, especially in comp
 * Confusion Matrix, Classification Report, ROC Curve
   
 
-5. Power BI Dashboard
+# 5. Power BI Dashboard
 
 * Built an interactive dashboard with:
 
